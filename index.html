@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Vision Shots Photography</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet"> 
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-duration="0.25s" data-wow-delay="0s">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+            <!-- <h1 class="text-primary">Vision Shots Photography</h1> -->
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
+            <!-- <div class="navbar-nav ms-auto py-0">
+                
+            </div> -->
+            <a href="index.html" class="navbar-brand bg-primary py-2 px-4 mx-3 d-none d-lg-block">
+                <!-- <h1 class="text-white">Vision Shots Photography</h1> -->
+            <img src="img/vision_logo.png" alt="" height="67">
+
+            </a>
+            <div class="navbar-nav ms-auto py-0">
+                <a href="#home" class="nav-item nav-link" onclick="closeNavMob()">Home</a>
+                <a href="#aboutus" class="nav-item nav-link" onclick="closeNavMob()">About</a>
+                <a href="#service" class="nav-item nav-link" onclick="closeNavMob()">Services</a>
+                <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Gallery</a>
+                    <div class="dropdown-menu rounded-0 shadow-sm border-0 m-0">
+                        <a href="gallery.html?id=prewedding" class="dropdown-item">Pre-Wedding</a>
+                        <a href="gallery.html?id=wedding" class="dropdown-item">Wedding</a>
+                        <a href="gallery.html?id=potraits" class="dropdown-item">Potraits</a>
+                        <a href="gallery.html?id=fashion" class="dropdown-item">Fashion</a>
+                        <a href="gallery.html?id=babyshoot" class="dropdown-item">Baby shoot</a>
+                    </div>
+                </div>
+                <a href="#team" class="nav-item nav-link" onclick="closeNavMob()">Team</a>
+                <!-- <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                    <div class="dropdown-menu rounded-0 shadow-sm border-0 m-0">
+
+                        <a href="feature.html" class="dropdown-item">Features</a>
+                        <a href="team.html" class="dropdown-item">Our Team</a>
+                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
+                        <a href="404.html" class="dropdown-item">404 Page</a>
+                    </div>
+                </div> -->
+                <a href="#contact" class="nav-item nav-link" onclick="closeNavMob()">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid hero-header bg-light py-5 mb-5" id="home">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <p class="text-primary text-uppercase mb-2 animated slideInDown">Welcome To Vision Shots Photography</p>
+                    <h1 class="display-4 mb-3 animated slideInDown">Wedding And Portrait Photographer Based in Mumbai</h1>
+                    <p class="animated slideInDown">At Vision Shots Photography, we believe in the power of visual storytelling. Our passion for capturing breathtaking moments and freezing them in time through the lens of our cameras drives us to deliver unparalleled photography experiences. With every click, we aim to create images that evoke emotions, ignite memories, and stand as a testament to life's most precious moments.</p>
+                    <!-- div class="d-flex align-items-center pt-4 animated slideInDown">
+                        <a href="" class="btn btn-primary py-3 px-4 me-5">Explore More</a>
+                        <button type="button" class="btn-play" data-bs-toggle="modal"
+                            data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                            <span></span>
+                        </button>
+                        <h5 class="ms-4 mb-0 d-none d-sm-block">Play Video</h5>
+                    </div -->
+                </div>
+                <div class="col-lg-6 animated fadeIn">
+                    <div class="row g-3">
+                        <div class="col-6 text-end">
+                            <img class="img-fluid bg-white p-3 w-100 mb-3" src="img/hero-1.jpg" alt="">
+                            <img class="img-fluid bg-white p-3 w-50" src="img/hero-3.jpg" alt="">
+                        </div>
+                        <div class="col-6">
+                            <img class="img-fluid bg-white p-3 w-50 mb-3" src="img/hero-4.jpg" alt="">
+                            <img class="img-fluid bg-white p-3 w-100" src="img/hero-2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- Video Modal Start -->
+    <!-- div class="c" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="exampleModalLabel">Youtube Video</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    -- 16:9 aspect ratio -- This is comment --
+                    <div class="ratio ratio-16x9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                            allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div -->
+    <!-- Video Modal End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5" id="aboutus">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-duration="0.25s" data-wow-delay="0s">
+                    <div class="row g-3 img-twice position-relative h-100">
+                        <div class="col-6">
+                            <img class="img-fluid bg-light p-3" src="img/about-1.jpg" alt="">
+                        </div>
+                        <div class="col-6 align-self-end">
+                            <img class="img-fluid bg-light p-3" src="img/about-2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-duration="0.25s" data-wow-delay="0s">
+                    <div class="h-100">
+                        <p class="text-primary text-uppercase mb-2">About Us</p>
+                        <h1 class="display-6 mb-4">We Are Creative And Professional Photographer</h1>
+                        <p>We are a team of dedicated and skilled photographers, each with a unique artistic eye and a shared commitment to excellence. With years of experience in various photography genres, we have honed our craft to capture the essence of weddings, portraits, landscapes, events, and more.</p>
+                        <p><b>Our Vision:</b> At Vision Shots Photography, our vision is to be the premier destination for artistic and authentic photography services. We strive to go beyond mere snapshots and delve into the essence of each subject, crafting images that speak volumes and leave a lasting impression on those who behold them.</p>
+                        <div class="row g-2 mb-4">
+                            <div class="col-sm-6">
+                                <i class="fa fa-check text-primary me-3"></i>Quality Pictures
+                            </div>
+                            <div class="col-sm-6">
+                                <i class="fa fa-check text-primary me-3"></i>Best Services
+                            </div>
+                            <!-- div class="col-sm-6">
+                                <i class="fa fa-check text-primary me-3"></i>On Time Delivery
+                            </div>
+                            <div class="col-sm-6">
+                                <i class="fa fa-check text-primary me-3"></i>Home Delivery
+                            </div -->
+                        </div>
+                        <!-- a class="btn btn-primary py-3 px-5" href="">Read More</a -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Service Start -->
+    <div class="container-xxl bg-light py-5 my-5" id="service">
+        <div class="container py-5">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-duration="0.25s" data-wow-delay="0s" style="max-width: 500px;">
+                <p class="text-primary text-uppercase mb-2">Our Services</p>
+                <h1 class="display-6 mb-4">We Provide Best Professional Services</h1>
+            </div>
+            <div class="row g-3">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-duration="0.25s" data-wow-delay="0s">
+                    <div class="service-item d-flex flex-column bg-white p-3 pb-0">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/service-1.jpg" alt="">
+                            <div class="service-overlay">
+                                <!-- a class="btn btn-lg-square btn-outline-light rounded-circle" href=""><i class="fa fa-link text-primary"></i></a -->
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h4>Weddings</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 pt-lg-5 wow fadeInUp" data-wow-duration="0.25s" data-wow-delay="0s">
+                    <div class="service-item d-flex flex-column bg-white p-3 pb-0">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/service-2.jpg" alt="">
+                            <div class="service-overlay">
+                                <!-- a class="btn btn-lg-square btn-outline-light rounded-circle" href=""><i class="fa fa-link text-primary"></i></a -->
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h4>Portraits</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-duration="0.25s" data-wow-delay="0s">
+                    <div class="service-item d-flex flex-column bg-white p-3 pb-0">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/service-3.jpg" alt="">
+                            <div class="service-overlay">
+                                <!-- a class="btn btn-lg-square btn-outline-light rounded-circle" href=""><i class="fa fa-link text-primary"></i></a -->
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h4>Fashion</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 pt-lg-5 wow fadeInUp" data-wow-duration="0.25s" data-wow-delay="0s">
+                    <div class="service-item d-flex flex-column bg-white p-3 pb-0">
+                        <div class="position-relative">
+                            <img class="img-fluid" src="img/service-4.jpg" alt="">
+                            <div class="service-overlay">
+                                <!-- a class="btn btn-lg-square btn-outline-light rounded-circle" href=""><i class="fa fa-link text-primary"></i></a -->
+                            </div>
+                        </div>
+                        <div class="text-center p-4">
+                            <h4>Editorial</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Project Start -->
+    <div class="container-xxl py-5" id="project">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-duration="0.25s" data-wow-delay="0s" style="max-width: 500px;">
+                <p class="text-primary text-uppercase mb-2">Our Works</p>
+                <h1 class="display-6 mb-0">Discover Our Unique And Creative Photoshoot</h1>
+            </div>
+            <div class="row g-3">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-duration="0.25s" data-wow-delay="0s">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="project-item">
+                                <img class="img-fluid" src="img/project-5.jpg" alt="">
+                                <a class="project-title h5 mb-0" href="prewedding.html" data-lightbox="project">
+                                    Pre-Wedding
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="project-item">
+                                <img class="img-fluid" src="img/project-1.jpg" alt="">
+                                <a class="project-title h5 mb-0" href="img/project-1.jpg" data-lightbox="project">
+                                    Fashion
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-duration="0.25s" data-wow-delay="0s">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="project-item">
+                                <img class="img-fluid" src="img/project-2.jpg" alt="">
+                                <a class="project-title h5 mb-0" href="img/project-2.jpg" data-lightbox="project">
+                                    Weddings
+                                </a>
+                            </div>
+                        </div>
+                        <!-- div class="col-12">
+                            <div class="project-item">
+                                <img class="img-fluid" src="img/project-6.jpg" alt="">
+                                <a class="project-title h5 mb-0" href="img/project-6.jpg" data-lightbox="project">
+                                    Weddings
+                                </a>
+                            </div>
+                        </div -->
+                    </div>
+                </div>
+                <!-- div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-duration="0.25s" data-wow-delay="0s">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="project-item">
+                                <img class="img-fluid" src="img/project-7.jpg" alt="">
+                                <a class="project-title h5 mb-0" href="img/project-7.jpg" data-lightbox="project">
+                                    Wedding
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="project-item">
+                                <img class="img-fluid" src="img/project-3.jpg" alt="">
+                                <a class="project-title h5 mb-0" href="img/project-3.jpg" data-lightbox="project">    
+                                    Memory
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div -->
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-duration="0.25s" data-wow-delay="0s">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="project-item">
+                                <img class="img-fluid" src="img/project-4.jpg" alt="">
+                                <a class="project-title h5 mb-0" href="img/project-4.jpg" data-lightbox="project">
+                                    Corporate
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="project-item">
+                                <img class="img-fluid" src="img/project-8.jpg" alt="">
+                                <a class="project-title h5 mb-0" href="img/project-8.jpg" data-lightbox="project">
+                                    Maternity
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Project End -->
+
+
+    <!-- Team Start -->
+    <div class="container-xxl px-0 py-5" id="team">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-duration="0.25s" data-wow-delay="0s" style="max-width: 500px;">
+            <p class="text-primary text-uppercase mb-2">Our Team</p>
+            <h1 class="display-6 mb-0">Creative Photograher And Videographer</h1>
+        </div>
+        <div class="row g-0">
+            <div class="col-md-4 wow fadeIn" data-wow-duration="0.25s" data-wow-delay="0s">
+                <div class="row g-0 flex-column  align-items-center">
+                    <div class="col-sm-9">
+                        <div class="team-img position-relative">
+                            <img class="img-fluid" src="img\Elias-Team-1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="h-100 p-3 d-flex flex-column justify-content-between">
+                            <div class="mb-3">
+                                <h4>Elias Saldhana</h4>
+                                <span>Photographer | Editor</span>
+                            </div>
+                            <p>Capturing moments and crafting visual stories through the lens and editing suite.</p>
+                            <div class="d-flex">
+                                <!--a class="btn btn-square btn-outline-primary rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-outline-primary rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a -->
+                                <a class="btn btn-square btn-outline-primary rounded-circle me-2" href="https://instagram.com/vision_shots_photography?igshid=MzRlODBiNWFlZA=="><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 wow fadeIn" data-wow-duration="0.25s" data-wow-delay="0s">
+                <div class="row g-0 flex-column align-items-center">
+                    <div class="col-sm-9">
+                        <div class="team-img position-relative">
+                            <img class="img-fluid" src="img\Rushi-Team-2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="h-100 p-3 d-flex flex-column justify-content-between">
+                            <div class="mb-3">
+                                <h4>Rushi shinde</h4>
+                                <span>Photographer | Videographer</span>
+                            </div>
+                            <p>A skilled photographer and meticulous editor, transforming moments into captivating visual narratives.</p>
+                            <div class="d-flex">
+                                <!-- a class="btn btn-square btn-outline-primary rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-outline-primary rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a -->
+                                <a class="btn btn-square btn-outline-primary rounded-circle me-2" href="https://instagram.com/pixomatic_photography?igshid=MzRlODBiNWFlZA=="><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 wow fadeIn" data-wow-duration="0.25s" data-wow-delay="0s">
+                <div class="row g-0 flex-column align-items-center">
+                    <div class="col-sm-9">
+                        <div class="team-img position-relative">
+                            <img class="img-fluid" src="img\Justin-Team-3.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-sm-9">
+                        <div class="h-100 p-3 d-flex flex-column justify-content-between">
+                            <div class="mb-3">
+                                <h4>Justin mendonsa</h4>
+                                <span>Photographer | Editor</span>
+                            </div>
+                            <p>A versatile artist with a camera and an editing suite, transforming images into captivating stories.</p>
+                            <div class="d-flex">
+                                <!-- a class="btn btn-square btn-outline-primary rounded-circle me-2" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-outline-primary rounded-circle me-2" href=""><i class="fab fa-twitter"></i></a -->
+                                <a class="btn btn-square btn-outline-primary rounded-circle me-2" href="https://instagram.com/rushi_shinde_photography_?igshid=MzRlODBiNWFlZA=="><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer position-relative bg-dark text-white-50 mt-5 py-5 px-4 px-lg-5 wow fadeIn" data-wow-duration="0.25s" data-wow-delay="0.1s">
+        <div class="row g-5 py-5" id="contact">
+            <div class="col-lg-6 pe-lg-5">
+                <a href="index.html" class="navbar-brand">
+                    <h1 class="display-5 text-primary text-wrap">Vision Shots Photography</h1>
+                </a>
+                <p>Book your shoot with me and my team and get your precious moments captured by us.</p>
+                <p><i class="fa fa-map-marker-alt me-2"></i>Panvel, Navi Mumbai 410206</p>
+                <p><i class="fa fa-phone-alt me-2"></i>
+                    <a class="text-decoration-none" href="tel:+91-8669092261">+91 8669092261</a>
+                </p>
+                <p><i class="fa fa-envelope me-2"></i>
+                    <a class="text-decoration-none" href="mailto:visionshotsphotography1@gmail.com">visionshotsphotography1@gmail.com</a>
+                </p>
+                <div class="d-flex justify-content-start mt-4">
+                    <!-- a class="btn btn-square btn-outline-primary rounded-circle me-2" href="#"><i class="fab fa-twitter"></i></a -->
+                    <a class="btn btn-square btn-outline-primary rounded-circle me-2" href="https://wa.me/8669092261"><i class="fab fa-whatsapp"></i></a>
+                    <a class="btn btn-square btn-outline-primary rounded-circle me-2" href="https://instagram.com/vision_shots_photography?igshid=MzRlODBiNWFlZA=="><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-square btn-outline-primary rounded-circle me-2" href="https://www.facebook.com/profile.php?id=100090133834678&mibextid=LQQJ4d"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-6 ps-lg-5">
+                <div class="row g-5">
+                    <div class="col-sm-6">
+                        <h4 class="text-light mb-4">Contact Us</h4>
+                        <form name="submit-to-google-sheet">
+                            <input class="form-control mb-3 me-sm-5" name="email" type="email" placeholder="Email" required>
+                            <input class="form-control mb-3 me-sm-5" name="name" type="name" placeholder="Name" required>
+                            <input class="form-control mb-3 me-sm-5" name="phone" type="tel" placeholder="Phone number" required>
+                            <textarea class="form-control mb-3 me-sm-5" name="message" type="text" rows="3" placeholder="Send us a message"></textarea>
+                            <button class="btn btn-primary p-2" type="submit">Send Message</button>
+                        </form>
+                    </div>
+                    <!--div class="col-sm-6">
+                        <h4 class="text-light mb-4">Contact Us</h4>
+                        <form name="submit-to-google-sheet">
+                            <input class="form-control mb-3 me-sm-5" name="email" type="email" placeholder="Email" required>
+                            <input class="form-control mb-3 me-sm-5" name="name" type="name" placeholder="Name" required>
+                            <input class="form-control mb-3 me-sm-5" name="phone" type="tel" placeholder="Phone number" required>
+                            <textarea class="form-control mb-3 me-sm-5" name="message" type="text" rows="3" placeholder="Send us a message"></textarea>
+                            <button class="btn btn-primary p-2" type="submit">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="col-sm-12">
+                        <h4 class="text-light mb-4">Newsletter</h4>
+                        <div class="w-100">
+                            <div class="input-group">
+                                <input type="text" class="form-control border-0 bg-secondary" style="padding: 20px 30px;" placeholder="Your Email Address"><button class="btn btn-primary px-4">Sign Up</button>
+                            </div>
+                        </div>
+                    </div -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Copyright Start -->
+    <div class="container-fluid bg-dark text-white border-top border-secondary px-0">
+        <div class="d-flex flex-column flex-md-row justify-content-between">
+            <div class="py-4 px-5 text-center text-md-start">
+                <p class="mb-0">&copy; <a class="text-primary" href="#">Vision Shots Photography</a>. All Rights Reserved.</p>
+            </div>
+            <div class="py-4 px-5 bg-secondary footer-shape position-relative text-center text-md-end" style="font-size: 12px;">
+                <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                <p class="mb-0">Designed by <a class="text-primary fw-bold" href="https://htmlcodex.com">HTML Codex</a></p>  Distributed by <a href="https://themewagon.com" target="_blank" >ThemeWagon</a>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- Submit to google sheet   -->
+
+    <!-- <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+    <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+    <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>  -->
+              
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzlZcU99trbVXyAGX_W-P7EF2ay1uP_p9f_s017b1l2E5dGYM62ivg5RGiXsqphtqKA/exec'
+      const form = document.forms['submit-to-google-sheet']
+    
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            console.log('Success!', response);
+            form.reset();
+            alert("Thank you for showing interest.\n\nWe'll get back to you in a while")
+        })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script> 
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
