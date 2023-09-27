@@ -6,6 +6,33 @@
     --dark: #1E1916;
 }
 
+/* scroll css */
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #EAA636;
+}
+/* end scroll css */
+
+/* modal backdrop make darker */
+.modal-backdrop{
+    opacity: 0.75 !important;
+}
+
 .back-to-top {
     position: fixed;
     display: none;
