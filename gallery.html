@@ -241,7 +241,20 @@
         window.onload = function() {
             const urlParams = new URLSearchParams(window.location.search);
             const myParam = urlParams.get('id');
-            setImageGallery(myParam, [1,2,3,4,5,6,7,8,9,10]);
+            let imgArray = [];
+            imgCount = 15
+            switch (myParam) {
+                case 'wedding':
+                    imgCount = 25
+                    break;
+                    case 'babyshoot':
+                    imgCount = 10
+                    break;
+            }
+            for (let index = 0; index < imgCount; index++) {
+                imgArray[index] = index + 1;
+            }
+            setImageGallery(myParam, imgArray);
             console.log('log myParam', myParam);
         };
     </script>
