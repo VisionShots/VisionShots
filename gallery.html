@@ -171,11 +171,18 @@
                     <div class="col-sm-6 col-md-8 col-lg-9">
                         <h4 class="text-light mb-4">Contact Us</h4>
                         <form name="submit-to-google-sheet">
-                            <input class="form-control mb-3 me-sm-5" name="email" type="email" placeholder="Email" required>
-                            <input class="form-control mb-3 me-sm-5" name="name" type="name" placeholder="Name" required>
-                            <input class="form-control mb-3 me-sm-5" name="phone" type="tel" placeholder="Phone number" required>
-                            <textarea class="form-control mb-3 me-sm-5" name="message" type="text" rows="3" placeholder="Send us a message"></textarea>
-                            <button class="btn btn-primary p-2" type="submit">Send Message</button>
+                            <fieldset id="contact-fieldset">
+                                <input class="form-control mb-3 me-sm-5" name="email" type="email" placeholder="Email" required>
+                                <input class="form-control mb-3 me-sm-5" name="name" type="name" placeholder="Name" required>
+                                <input class="form-control mb-3 me-sm-5" name="phone" type="tel" placeholder="Phone number" required>
+                                <textarea class="form-control mb-3 me-sm-5" name="message" type="text" rows="3" placeholder="Send us a message"></textarea>
+                                <button class="btn btn-primary p-2 d-flex align-items-center" type="submit">
+                                    <div class="spinner-border text-light spinner-border-sm d-none me-1" role="status" id="contact-spinner">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                    Send Message
+                                </button>
+                            </fieldset>
                         </form>
                     </div>
                 </div>
@@ -214,12 +221,16 @@
       const form = document.forms['submit-to-google-sheet']
     
       form.addEventListener('submit', e => {
-        e.preventDefault()
+        e.preventDefault();
+        document.getElementById('contact-fieldset').setAttribute('disabled', '');
+        document.getElementById('contact-spinner').classList.remove('d-none');
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => {
+        .then(response => {
+            document.getElementById('contact-fieldset').removeAttribute('disabled', '');
+            document.getElementById('contact-spinner').classList.add('d-none');
             console.log('Success!', response);
             form.reset();
-            alert("Thank you for showing interest.\n\nWe'll get back to you in a while")
+            alert("Thank you for showing interest.\n\nWe'll get back to you in a while");
         })
           .catch(error => console.error('Error!', error.message))
       })
