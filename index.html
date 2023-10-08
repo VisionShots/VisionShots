@@ -328,20 +328,22 @@
                 <div class="row g-5">
                     <div class="col-sm-6 col-md-8 col-lg-9">
                         <h4 class="text-light mb-4">Contact Us</h4>
-                        <form name="submit-to-google-sheet">
-                            <fieldset id="contact-fieldset">
-                                <input class="form-control mb-3 me-sm-5" name="email" type="email" placeholder="Email" required>
-                                <input class="form-control mb-3 me-sm-5" name="name" type="name" placeholder="Name" required>
-                                <input class="form-control mb-3 me-sm-5" name="phone" type="tel" placeholder="Phone number" required>
-                                <textarea class="form-control mb-3 me-sm-5" name="message" type="text" rows="3" placeholder="Send us a message"></textarea>
-                                <button class="btn btn-primary p-2 d-flex align-items-center" type="submit">
-                                    <div class="spinner-border text-light spinner-border-sm d-none me-1" role="status" id="contact-spinner">
-                                        <span class="visually-hidden">Loading...</span>
-                                    </div>
-                                    Send Message
-                                </button>
-                            </fieldset>
+                        <form id="contact-form"
+                        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScPVejMdI6avZuIfElxQJAf8scqMj3n9sLPoitOMI7GTCEL5Q/formResponse"
+                        method="post" target="_blank">
+                        <input class="form-control mb-3 me-sm-5 required" name="emailAddress" type="email" placeholder="Email" required onkeyup="enableSubmit()">
+                        <input class="form-control mb-3 me-sm-5 required" name="entry.1908797338" type="name" placeholder="Name" required onkeyup="enableSubmit()">
+                        <input class="form-control mb-3 me-sm-5" name="entry.648562308" type="tel" placeholder="Phone number">
+                        <textarea class="form-control mb-3 me-sm-5" name="entry.1646533005" type="text" rows="3" value=" " placeholder="Send us a message"></textarea>
+                        <button class="btn btn-primary p-2 d-flex align-items-center" type="submit" id="form-submit" disabled>
+                            <div class="spinner-border text-light spinner-border-sm d-none me-1" role="status" id="contact-spinner">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                            Send Message
+                        </button>
+                        <input class="d-none" id="form-reset" type="reset" value="Reset">
                         </form>
+                        <iframe class="d-none" src="" frameborder="0" name="myIframe"></iframe>
                     </div>
                     <!--div class="col-sm-6">
                         <h4 class="text-light mb-4">Contact Us</h4>
