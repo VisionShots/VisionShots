@@ -30,6 +30,9 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Testimonials js -->
+    <script src="js/testimony.js"></script>
 </head>
 
 <body>
@@ -219,6 +222,20 @@
         </div>
     </div>
     <!-- Project End -->
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px;">
+                <p class="text-primary text-uppercase mb-2">Client's Review</p>
+                <h1 class="display-6 mb-0">Our Customers Stories</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" id="testimonial-block" data-wow-delay="0.1s">
+                
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
     
     <!-- Team Start -->
     <div class="container-xxl px-0 pb-5" style="padding-top: 90px;" id="team">
@@ -416,6 +433,8 @@
         })
           .catch(error => console.error('Error!', error.message))
       })
+
+        window.onpaint = setTestimonials();
     </script> 
 
     <!-- JavaScript Libraries -->
