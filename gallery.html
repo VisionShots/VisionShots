@@ -9,7 +9,7 @@
     <meta content="Vision shots photography. Our Pre wedding photo gallery" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -222,21 +222,7 @@
     <script>
       const scriptURL = 'https://script.google.com/macros/s/AKfycbzlZcU99trbVXyAGX_W-P7EF2ay1uP_p9f_s017b1l2E5dGYM62ivg5RGiXsqphtqKA/exec'
       const form = document.forms['submit-to-google-sheet']
-    
-      form.addEventListener('submit', e => {
-        e.preventDefault();
-        document.getElementById('contact-fieldset').setAttribute('disabled', '');
-        document.getElementById('contact-spinner').classList.remove('d-none');
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            document.getElementById('contact-fieldset').removeAttribute('disabled', '');
-            document.getElementById('contact-spinner').classList.add('d-none');
-            console.log('Success!', response);
-            form.reset();
-            alert("Thank you for showing interest.\n\nWe'll get back to you in a while");
-        })
-          .catch(error => console.error('Error!', error.message))
-      })
+
     </script> 
 
     <!-- JavaScript Libraries -->
